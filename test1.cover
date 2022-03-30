@@ -1,0 +1,17 @@
+    1: def smart_divide(func):
+    1:     def inner(a,b):
+    1:         if b == 0:
+                   print('we cannot divide the value that you given')
+               else:
+    1:             return func(a,b)
+    1:     return inner
+       
+       
+    1: @smart_divide
+       def divid(a,b):
+    1:     return (a/b)
+       
+       
+       
+    1: test = divid(34,3)
+       
